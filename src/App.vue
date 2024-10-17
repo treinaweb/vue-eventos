@@ -1,7 +1,11 @@
-<script setup></script>
+<script setup>
+import EventoClick from "./components/EventoClick.vue";
+</script>
 
 <template>
-    <h1>TreinaWeb</h1>
+    <div>
+        <EventoClick />
+    </div>
 </template>
 
 <style scoped></style>
