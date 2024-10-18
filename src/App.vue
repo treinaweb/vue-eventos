@@ -2,6 +2,7 @@
 import EventoClick from "./components/EventoClick.vue";
 import EventoTeclado from "./components/EventoTeclado.vue";
 import EventoMouse from "./components/EventoMouse.vue";
+import Propagacao from "./components/Propagacao.vue";
 </script>
 
 <template>
@@ -16,6 +17,10 @@ import EventoMouse from "./components/EventoMouse.vue";
         <hr />
         <div>
             <EventoMouse />
+        </div>
+        <hr />
+        <div>
+            <Propagacao />
         </div>
     </main>
 </template>
