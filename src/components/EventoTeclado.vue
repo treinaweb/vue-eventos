@@ -20,6 +20,13 @@ function eventoKeyPress(event) {
 </script>
 
 <template>
+    <h2>Evento de Teclado</h2>
     <input type="text" @keypress.b="eventoKeyPress" @keyup.a="eventoKeyUp" />
     <p>{{ texto }}</p>
 </template>
+
+<style scoped>
+h2 {
+    color: #fff;
+}
+</style>
