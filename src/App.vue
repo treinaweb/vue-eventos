@@ -8,6 +8,10 @@ import CampoInput from "./components/CompoInput.vue";
 import { ref } from "vue";
 
 const nome = ref("");
+
+function capturarValor(valor) {
+    nome.value = valor;
+}
 </script>
 
 <template>
@@ -31,9 +35,9 @@ const nome = ref("");
         <div>
             <h2>Emit</h2>
             <form>
-                <CampoInput/>
+                <CampoInput @inputEvento="capturarValor" />
             </form>
-            <p>{{ nome }}</p>
+            <p>O seu nome é: {{ nome }}</p>
         </div>
     </main>
 </template>
